@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Mystic Galaxy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background -->
+  <div class="stars-bg"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      🚀 Mystic Galaxy <span class="badge">Beta</span>
+    </div>
+    <nav class="nav">
+      <a href="#articles">บทความ</a>
+      <a href="#chat">พูดคุย</a>
+      <a href="#fortune">เซียมซี</a>
+      <a href="#ai">AI ดูดวง</a>
+      <a href="#affiliate">Affiliate</a>
+      <a href="#ads">โฆษณา</a>
+      <a href="#products">ของมงคล</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <h1>พลังแห่งจักรวาลในปลายนิ้วคุณ</h1>
+      <p>อ่านบทความ พูดคุย แชร์ภาพความประทับใจ และสัมผัสพลังการทำนายผ่าน AI และมินิเกมเสี่ยงเซียมซี</p>
+      <div class="hero-buttons">
+        <a href="#fortune" class="btn primary">✨ เขย่าเซียมซี</a>
+        <a href="#ai" class="btn outline">🔮 AI ดูดวง</a>
+      </div>
+    </section>
+
+    <!-- Articles -->
+    <section id="articles">
+      <h2>บทความ & คลิปสั้น</h2>
+      <div class="grid" id="articles-container"></div>
+    </section>
+
+    <!-- Chat -->
+    <section id="chat">
+      <h2>พูดคุยในชุมชน</h2>
+      <div id="chat-box">
+        <div id="messages"></div>
+        <div class="chat-input">
+          <input type="text" id="chat-text" placeholder="พิมพ์ข้อความ...">
+          <input type="file" id="chat-img" accept="image/*">
+          <button id="send-btn">ส่ง</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fortune -->
+    <section id="fortune">
+      <h2>มินิเกม เสี่ยงเซียมซีออนไลน์</h2>
+      <div id="fortune-area">
+        <button id="shake-btn">เขย่าเสี่ยงทาย</button>
+        <div id="fortune-result">ยังไม่มีคำทำนาย</div>
+      </div>
+    </section>
+
+    <!-- AI -->
+    <section id="ai">
+      <h2>AI ดูดวง (เดโม่)</h2>
+      <div class="ai-form">
+        <input type="date" id="birth">
+        <select id="gender">
+          <option>ไม่ระบุ</option>
+          <option>ชาย</option>
+          <option>หญิง</option>
+        </select>
+        <input type="number" id="age" placeholder="อายุ">
+        <textarea id="question" placeholder="คำถาม เช่น งานจะก้าวหน้าหรือไม่?"></textarea>
+        <button id="ai-btn">ทำนาย</button>
+      </div>
+      <div id="ai-answer"></div>
+    </section>
+
+    <!-- Affiliate -->
+    <section id="affiliate">
+      <h2>Affiliate & ผู้สนับสนุน</h2>
+      <div id="affiliate-container"></div>
+    </section>
+
+    <!-- Ads -->
+    <section id="ads">
+      <h2>พื้นที่โฆษณา</h2>
+      <div class="grid" id="ads-container"></div>
+    </section>
+
+    <!-- Products -->
+    <section id="products">
+      <h2>ของมงคล & ช่องทางติดต่อ</h2>
+      <div class="grid" id="products-container"></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div>© <span id="year"></span> Mystic Galaxy — ศรัทธาพาโชค</div>
+    <div class="links">
+      <a href="#">นโยบายความเป็นส่วนตัว</a>
+      <a href="#">เงื่อนไขการใช้บริการ</a>
+      <a href="#">ติดต่อโฆษณา</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
